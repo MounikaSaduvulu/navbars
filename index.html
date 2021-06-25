@@ -1,0 +1,222 @@
+<html>
+<title>  </title>
+
+<head> 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+<style>
+body{
+  margin:0;
+  padding:0;
+}
+.container{
+  background: url(Beach1.jpeg) no-repeat top center ;
+   background-size: cover;
+    width:100%;
+    height:50%;
+    display: flex;
+   
+    
+
+}
+.container h2{
+  font-size: 90px;
+  margin-left: 130px;
+  color:deeppink;
+  margin-top: 350px;
+  
+}
+.side-nav{
+width:120px;
+position:fixed;
+z-index:1;
+top:8%;
+
+left:2px;
+border-radius:0 15px 15px 0; 
+background-color: greenyellow;
+overflow-x:hidden;
+line-height:90px;
+
+
+}
+.side-nav a{
+color:blue;
+display:block;
+text-decoration: none;
+line-height:90px;
+font-size: 30px;
+transition:all 1s ease;
+}
+ a.active, a:hover{
+  background-color: whitesmoke;
+}
+.icons{
+  position: absolute;
+  background-color: wheat;
+  width: 100%;
+  height: 50px;
+  top:50%;
+  left:0%;
+  border-bottom: 2px solid red;
+  
+}
+.icons .fa{font-size: 50px;
+ 
+}
+#one{font-size: 50px;}
+
+.topnav-bar{
+
+background:cyan;
+width:100%;
+height:6%;
+margin-left: -300px;
+padding-right:100px; 
+
+}
+.topnav-bar a{
+font-size:30px;
+text-decoration:none;
+padding:12px;
+text-align:center;
+color:blue;
+display:block;
+float:left;
+}
+.topnav-bar a:hover{
+background:pink;
+}
+.topnav-bar  .search-bar{
+
+float:right;
+}
+.topnav-bar  input[type="text"]{
+padding:3px;
+margin-top:15px;
+border:none;
+}
+.topnav-bar .search-bar button{
+float:right;
+margin-right:10px;
+margin-top:16px;
+}
+.topnav-bar   .search-bar button:hover{
+background:yellow;
+}
+
+
+
+
+
+@media screen and (max-width:600px){
+.container {
+ 
+  
+    display: flex;
+   
+    
+}
+.container .side-nav{
+width:50px;
+position:absolute;
+z-index:1;
+top:13%;
+right:2px;
+float:right;
+border-radius:0 10px 10px 0; 
+background-color: greenyellow;
+overflow-x:hidden;
+
+float: right;
+
+}
+.side-nav a{
+color:blue;
+display:block;
+text-decoration: none;
+line-height:25px;
+font-size: 10px;
+transition:all 1s ease;
+}
+.container h2{
+  font-size:30px;
+  margin-top:150px;
+  margin-left:-400px;
+  color:blue;
+
+}
+ .icons{
+  position: relative;
+  top:100%;
+  width: 133%;
+  height: 20px;
+ 
+}
+.icons .fa{
+  font-size: 20px;
+}
+#one{font-size: 20px;}
+
+.topnav-bar{
+width: 200%;
+height: 34%;
+ display: block;
+}
+.topnav-bar a{
+  font-size: 10px;
+ margin-left:200px; 
+ width: 77%;
+}
+.topnav-bar .search-bar button{
+float:right;
+margin-right:0px;
+margin-top:16px;
+}
+
+}
+
+</style>
+ </head>
+<body>
+
+ <div class="container">
+     <div class="icons">
+<a class="active" href=""><i class="fa fa-home"></i></a>
+<a  href=""><i class="fa fa-globe"></i></a>
+<a  href=""><i class="fa fa-search"></i></a>
+<a  href=""><i class="fa fa-envelope"></i></a>
+<a  href=""><i class="fa fa-heart"></i></a><span id="one"> &nbsp;Horizontal navbar</span>
+</div>
+
+    <h2>side<br> bar</h2>
+<div class="side-nav">
+<a href="" class="active"><span style="color:red">S</span>idebar</a>  
+<a href="">S<span style="color:red">i</span>debar</a>
+<a href="">Si<span style="color: red">d</span>ebar</a>
+<a href="">Sid<span style="color:red">e</span>bar</a>
+<a href="">Side<span style="color:red">b</span>ar</a>
+<a href="">Sideb<span style="color:red">a</span>r</a>
+<a href="">Sideba<span style="color:red">r</span></a>
+
+
+</div><br>
+
+<div class="topnav-bar">
+  <a class="active" href="">Responsive</a>
+    <a href="">Search bar</a>
+<div class="search-bar">
+<form>
+<input type="text"  placeholder="search"  name="search">
+<button type="submit"><i class="fa fa-search"></i></button>
+</form>
+</div>
+<br>
+</div>
+
+  
+  
+
+
+ </div>
+</body>
+</html>
